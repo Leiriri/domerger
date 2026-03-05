@@ -1,0 +1,7 @@
+The contents of this directory are data files sourced from dom6inspector, licensed under the GNU General Public License v3.0 (GPLv3).
+
+Original source: https://github.com/larzm42/dom6inspector
+
+The files have been renamed from *.csv to *.tsv to fit their contents better.
+
+For details, see the LICENSE file in the root of this repository.

@@ -1,0 +1,59 @@
+{
+    "version": 10,
+    "cmakeMinimumRequired": {
+        "major": 4,
+        "minor": 2,
+        "patch": 3
+    },
+    "configurePresets": [
+        {
+            "name": "linux",
+            "hidden": false,
+            "binaryDir": "${sourceDir}/build/linux",
+            "generator": "Ninja",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        },
+        {
+            "name": "windows",
+            "hidden": false,
+            "binaryDir": "${sourceDir}/build/windows",
+            "generator": "Ninja",
+            "toolchainFile": "${sourceDir}/windows-toolchain.cmake",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "build-linux",
+            "configurePreset": "linux",
+            "targets": [
+                "all"
+            ]
+        },
+        {
+            "name": "build-windows",
+            "configurePreset": "windows",
+            "targets": [
+                "all"
+            ]
+        },
+        {
+            "name": "build-run-linux",
+            "configurePreset": "linux",
+            "targets": [
+                "run"
+            ]
+        },
+        {
+            "name": "build-run-windows",
+            "configurePreset": "windows",
+            "targets": [
+                "run"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+dominions-merger
+dominions-merger.exe
+obj/
+.cache/
+notes
+.clang-format
+mods/
+target/
+build/
+log
+*.log
+notes
+compile_commands.json
