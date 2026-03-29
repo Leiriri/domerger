@@ -700,7 +700,7 @@ void handle_damage_command(std::string &line, std::ofstream *output_file) {
     // handle as enchantment
     debug_logger << "Handling #damage as enchantment." << "\n";
     // insert enchantment id and name
-    insert_special_spell(id, current_name, ENCHANTMENT_SPELL);
+    insert_special_spell(current_id, current_name, ENCHANTMENT_SPELL);
     remap_id_in_line(line, ENCHANTMENTS, output_file);
   } else if (current_modification_is_special_spell == SUMMON_SPELL) { // definitely a summon spell
     // handle as summon
