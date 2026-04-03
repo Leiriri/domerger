@@ -289,6 +289,7 @@ static const std::unordered_map<std::string, std::tuple<uint8_t, uint8_t, uint8_
     {"#req_notforally", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
     {"#req_poptype", std::make_tuple(POPTYPES, REMAP_ID, NO_FLAGS)},
     {"#req_notpoptype", std::make_tuple(POPTYPES, REMAP_ID, NO_FLAGS)},
+    {"#req_nositenbr", std::make_tuple(MAGIC_SITES, REMAP_ID, NO_FLAGS)},
     {"#req_fullowner", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
     {"#req_domowner", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
     {"#req_godismnr", std::make_tuple(MONSTERS, REMAP_ID, NO_FLAGS)},
