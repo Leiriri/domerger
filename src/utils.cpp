@@ -69,9 +69,6 @@ std::tuple<std::string, std::string> preprocess_line(const std::string &line) {
     comment = trimmed_line.substr(comment_pos);
     trimmed_line = trimmed_line.substr(0, comment_pos);
   }
-  // remove brackets from anywhere in the trimmed_line as they can cause some weird problems when interpreted by the game (saw one nation get some units without any stats added to their roster)
-  trimmed_line.erase(std::remove(trimmed_line.begin(), trimmed_line.end(), '['), trimmed_line.end());
-  trimmed_line.erase(std::remove(trimmed_line.begin(), trimmed_line.end(), ']'), trimmed_line.end());
   return std::make_tuple(trimmed_line, comment);
 }
 
