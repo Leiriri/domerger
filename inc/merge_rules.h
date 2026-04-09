@@ -284,6 +284,7 @@ static const std::unordered_map<std::string, std::tuple<uint8_t, uint8_t, uint8_
     // event commands
     {"#req_nation", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
     {"#req_nonation", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
+    {"#req_notnation", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},     // doesn't seem to be listed in the manual but is used by Warhammer
     {"#req_fornation", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
     {"#req_notfornation", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
     {"#req_notforally", std::make_tuple(NATIONS, REMAP_ID, NO_FLAGS)},
